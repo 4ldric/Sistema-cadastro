@@ -13,21 +13,21 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap" />
 
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/colors.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/login-container.css" />
-  <link rel="stylesheet" href="./css/form-container.css" />
-  <link rel="stylesheet" href="./css/form.css" />
-  <link rel="stylesheet" href="./css/form-title.css" />
-  <link rel="stylesheet" href="./css/form-social.css" />
-  <link rel="stylesheet" href="./css/social-icon.css" />
-  <link rel="stylesheet" href="./css/form-input-container.css" />
-  <link rel="stylesheet" href="./css/form-input.css" />
-  <link rel="stylesheet" href="./css/form-button.css" />
-  <link rel="stylesheet" href="./css/overlay-container.css" />
-  <link rel="stylesheet" href="./css/overlay.css" />
-  <link rel="stylesheet" href="./css/mobile-text.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/colors.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/login-container.css" />
+  <link rel="stylesheet" href="./assets/css/form-container.css" />
+  <link rel="stylesheet" href="./assets/css/form.css" />
+  <link rel="stylesheet" href="./assets/css/form-title.css" />
+  <link rel="stylesheet" href="./assets/css/form-social.css" />
+  <link rel="stylesheet" href="./assets/css/social-icon.css" />
+  <link rel="stylesheet" href="./assets/css/form-input-container.css" />
+  <link rel="stylesheet" href="./assets/css/form-input.css" />
+  <link rel="stylesheet" href="./assets/css/form-button.css" />
+  <link rel="stylesheet" href="./assets/css/overlay-container.css" />
+  <link rel="stylesheet" href="./assets/css/overlay.css" />
+  <link rel="stylesheet" href="./assets/css/mobile-text.css" />
 
   <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
 
@@ -41,7 +41,7 @@
       <div class="form-container">
 
         <!-- formulario de login -->
-        <form class="form form-login" action="backend.php" method="POST">
+        <form class="form form-login" action="loginsingup/auth.php" method="POST">
           <h2 class="form-title">Entrar com</h2>
 
           <div class="form-social">
@@ -62,19 +62,19 @@
 
           <div class="form-input-container">
             <input type="email" class="form-input" name="email" placeholder="Email" required />
-            <input type="password" class="form-input" id="passwd1" name="password" placeholder="Senha" required />
-            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="showpasswd1"
-              class="eye">
+            <input type="password" class="form-input" id="passwdlog" name="password" placeholder="Senha" required />
+            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+              id="showpasswdlog" class="eye">
           </div>
 
-          <a href="#" class="form-link">Esqueceu a senha?</a>
+          <a href="forgot/forgot_password.php" class="form-link">Esqueceu a senha?</a>
           <button type="submit" class="form-button" name="login">Logar</button>
           <p class="mobile-text">Não tem conta? <a href="#" id="open-register-mobile">Registre-se</a></p>
 
         </form>
 
         <!-- formulario de cadastro -->
-        <form class="form form-register" action="backend.php" method="POST">
+        <form class="form form-register" action="loginsingup/auth.php" method="POST">
           <h2 class="form-title">Criar Conta</h2>
 
           <div class="form-social">
@@ -96,9 +96,9 @@
           <div class="form-input-container">
             <input type="text" class="form-input" name="name" placeholder="Nome" required />
             <input type="email" class="form-input" name="email" placeholder="Email" required />
-            <input type="password" class="form-input" id="passwd2" name="password" placeholder="Senha" required />
-            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="showpasswd2"
-              class="eye">
+            <input type="password" class="form-input" id="passwdcad" name="password" placeholder="Senha" required />
+            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+              id="showpasswdcad" class="eye">
           </div>
 
           <button type="submit" class="form-button" name="register">Cadastrar</button>
@@ -127,7 +127,7 @@
   </main>
 </body>
 
-<script src="./js/showpassord.js" defer></script>
-<script src="./js/login.js" defer></script>
+<script src="./assets/js/showpassord.js" defer></script>
+<script src="./assets/js/login.js" defer></script>
 
 </html>
